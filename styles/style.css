@@ -1,0 +1,117 @@
+*{
+	font-family: 'Helvetica', 'Arial', 'sans-serif;';
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	color: white;
+}
+.container{
+	margin: 4vh 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.left-container, .right-container{
+	background-color: rgb(30, 30, 30);
+	height: 100%;
+	padding: 20px;
+	border-radius: 20px;
+}
+.left-container{
+	width: 28%;
+}
+.right-container{
+	width: 60%;
+}
+.left-container .basic-information{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.left-container .basic-information img{
+	border-radius: 10px;
+}
+.left-container .basic-information h1{
+	margin: 10px auto;
+}
+.left-container .basic-information h4{
+	background-color: rgb(42, 43, 43, 0.8);
+	padding: 4px 10px;
+	border-radius: 3px;
+}
+.left-container .contact-information{
+	padding: 0 20px;
+	margin: 20px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-top: 2px solid rgb(42, 43, 43, 0.8);
+}
+.left-container .contact-information .row{
+	margin: 15px 0;
+	min-width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.left-container .contact-information .row .content{
+	width: 65%;
+}
+.left-container .contact-information .row .content h4{
+	color: #777;
+	margin: 2px auto;
+}
+.left-container .contact-information .row .icon{
+	transform: scale(1.5);
+	color: #2196F3;
+}
+
+.right-container .navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.right-container .navbar h1{
+	border-bottom: 2px solid #2196F3;
+}
+.right-container .navbar ul li{
+	display: inline-block;
+	margin: auto 15px;
+}
+.right-container .navbar ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.1rem;
+	transition: 0.2s;
+}
+.right-container .navbar ul li a:hover{
+	border-bottom: 1px solid #2196F3;
+}
+@media screen and (width <= 1000px) {
+	.container{
+		flex-wrap: wrap;
+	}
+	.right-container, .left-container{
+		flex-basis: 80%;
+		margin: 15px auto;
+	}
+	.right-container .navbar{
+		display: inline-block;
+		width: 100%;
+	}
+	.right-container .navbar h1{
+		display: inline-block;
+		margin-bottom: 1rem;
+	}
+	.right-container .navbar ul{
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+}

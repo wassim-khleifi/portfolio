@@ -1,0 +1,95 @@
+.right-container .about{
+	margin: 5vh auto;
+}
+.right-container .about div{
+	margin: 5px 0;
+}
+.right-container .about .about-text{
+	font-size: 1.1rem;
+	text-wrap: pretty;
+}
+.right-container .about .section-title{
+	display: inline-block;
+	margin: 15px auto;
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 2px solid #2196F3;
+}
+.right-container .about .skills .images img{
+	margin: 3px 5px;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+.right-container .about .skills .images img:hover{
+	transform: scale(1.15);
+	transition: .4s;
+}
+.right-container .about .projects .projects-rows{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.right-container .about .projects .projects-rows .row{
+	background-color: rgb(42, 43, 43, 0.8);
+	margin: 10px auto;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+	flex-basis: 41%;
+}
+.right-container .about .projects .projects-rows .row:hover{
+	transform: translateY(-10px);
+	transition: .4s;
+}
+.right-container .about .projects .projects-rows .row .title{
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+.right-container .about .projects .projects-rows .row .title h4{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.right-container .about .projects .projects-rows .row .title img{
+	width: 50px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+.right-container .about .projects .projects-rows .row p{
+	width: 100%;
+	text-align: center;
+	text-wrap: pretty;
+	margin: 10px 0;
+}
+.right-container .about .projects .projects-rows .row .redirect{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.right-container .about .projects .projects-rows .row .redirect a{
+	text-align: center;
+	text-decoration: none;
+	background-color: #2196F3;
+	padding: 3px 12px;
+	border-radius: 10px;
+	color: white;
+	font-size: 1em;
+	font-weight: bold;
+}
+.right-container .about .projects .projects-rows .row .redirect a:hover{
+	transform: translateY(-5px);
+	transition: 0.4s;
+}
+@media screen and (width <= 1000px){
+	.right-container .about .skills .images{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.right-container .about .skills .images img{
+		margin: 5px 7px;
+	}
+	.right-container .about .projects .projects-rows .row{
+		flex-basis: 100%;
+	}
+}

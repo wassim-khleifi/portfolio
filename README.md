@@ -19,7 +19,7 @@ This is an open-source portfolio project built using **HTML** and **CSS**. The g
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-portfolio.git
+   git clone https://github.com/wassim-khleifi/portfolio.git
    ```
 2. Open the `index.html` file in your browser to view the portfolio.
 
