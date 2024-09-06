@@ -1,4 +1,4 @@
-.right-container .other .top-articles, .top-repos, .section-text{
+.right-container .other .top-articles, .top-podcasts, .section-text{
 	margin: 3rem auto;
 }
 .right-container .other .section-text{
@@ -23,13 +23,13 @@
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-.right-container .other .top-articles ul{
+.right-container .other .top-articles ul, .top-podcasts ul{
 	margin-left: 2.0rem;
 }
-.right-container .other .top-articles ul li{
+.right-container .other .top-articles ul li, .top-podcasts ul li{
 	margin: 10px auto;
 }
-.right-container .other .top-articles ul li a{
+.right-container .other .top-articles ul li a, .top-podcasts ul li a{
 	color: #2196F3;
 }
 .right-container .other .donation .content{
